@@ -1,0 +1,6 @@
+@PlataformaFbj_HostAddress = http://localhost:5079
+
+GET {{PlataformaFbj_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
