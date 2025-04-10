@@ -15,6 +15,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 var key = Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]);
 Console.WriteLine($"JWT Key: {builder.Configuration["Jwt:Key"]}");
 
+// AutoMapper
+
+builder.Services.AddAutoMapper(typeof(Program));
+
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>
     {

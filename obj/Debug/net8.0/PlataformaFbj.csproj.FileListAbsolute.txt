@@ -1,10 +1,3 @@
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.csproj.AssemblyReference.cache
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.AssemblyInfoInputs.cache
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.AssemblyInfo.cs
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.csproj.CoreCompileInputs.cache
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\appsettings.json
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\PlataformaFbj.exe
@@ -104,6 +97,14 @@ C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.csproj.AssemblyReference.cache
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.AssemblyInfoInputs.cache
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.AssemblyInfo.cs
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.csproj.CoreCompileInputs.cache
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.sourcelink.json
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\staticwebassets\msbuild.PlataformaFbj.Microsoft.AspNetCore.StaticWebAssets.props
@@ -118,3 +119,5 @@ C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.pdb
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\PlataformaFbj.genruntimeconfig.cache
 C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\obj\Debug\net8.0\ref\PlataformaFbj.dll
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\vinem\Documents\Faculdade Coisas\Pratica casa\C-sharp\PlataformaFbj\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

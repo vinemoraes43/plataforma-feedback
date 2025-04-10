@@ -7,6 +7,10 @@ using PlataformaFbj.Models;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using PlataformaFbj.DTOs.Usuario;
+//using PlataformaFbj.DTOs.Jogo;
+//using PlataformaFbj.DTOs.Feedback;
+using AutoMapper;
 
 namespace PlataformaFbj.Controllers
 {
@@ -16,11 +20,13 @@ namespace PlataformaFbj.Controllers
     {
         private readonly AppDbContext _context;
         private readonly IConfiguration _configuration;
+        private readonly IMapper _mapper;
 
-        public UsuarioController(AppDbContext context, IConfiguration configuration)
+        public UsuarioController(AppDbContext context, IConfiguration configuration, IMapper mapper)
         {
             _context = context;
             _configuration = configuration;
+            _mapper = mapper;
         }
 
         [HttpGet]
@@ -35,24 +41,10 @@ namespace PlataformaFbj.Controllers
                 .Include(u => u.Jogos)
                 .ToListAsync();
 
-            var result = desenvolvedores.Select(d => new DesenvolvedorDto
-            {
-                Id = d.Id,
-                Nome = d.Nome,
-                Email = d.Email,
-                Tipo = d.Tipo,
-                Jogos = d.Jogos.Select(j => new JogoDto
-                {
-                    Id = j.Id,
-                    Nome = j.Nome,
-                    Descricao = j.Descricao,
-                    Plataforma = j.Plataforma
-                }).ToList()
-            });
+            var result = _mapper.Map<List<DesenvolvedorDto>>(desenvolvedores);
 
             return Ok(result);
         }
-
 
         [HttpGet("testers")]
         public async Task<IActionResult> ListarTesters()
@@ -62,30 +54,18 @@ namespace PlataformaFbj.Controllers
                 .Include(u => u.Feedbacks)
                 .ToListAsync();
 
-            var result = testers.Select(t => new UsuarioTestersDto
-            {
-                Id = t.Id,
-                Nome = t.Nome,
-                Email = t.Email,
-                Tipo = t.Tipo,
-                Feedbacks = t.Feedbacks.Select(f => new FeedbackDto
-                {
-                    Id = f.Id,
-                    Comentario = f.Comentario,
-                    Nota = f.Nota,
-                    DataCriacao = f.DataCriacao
-                }).ToList()
-            });
+            var result = _mapper.Map<List<UsuarioTestersDto>>(testers);
 
             return Ok(result);
         }
 
-
         [HttpPost("cadastro")]
-        public async Task<IActionResult> Cadastrar([FromBody] Usuario usuario)
+        public async Task<IActionResult> Cadastrar([FromBody] UsuarioCadastroDto dto)
         {
-            if (await _context.Usuarios.AnyAsync(u => u.Email == usuario.Email))
+            if (await _context.Usuarios.AnyAsync(u => u.Email == dto.Email))
                 return BadRequest("E-mail já cadastrado.");
+
+            var usuario = _mapper.Map<Usuario>(dto);
 
             _context.Usuarios.Add(usuario);
             await _context.SaveChangesAsync();
@@ -125,20 +105,18 @@ namespace PlataformaFbj.Controllers
 
         [HttpPut]
         [Authorize]
-        public async Task<IActionResult> Atualizar([FromBody] Usuario usuarioAtt)
+        public async Task<IActionResult> Atualizar([FromBody] UsuarioAtualizacaoDto dto)
         {
             var userId = int.Parse(User.FindFirstValue(ClaimTypes.NameIdentifier)!);
             var usuario = await _context.Usuarios.FindAsync(userId);
             if (usuario == null) return NotFound("Usuário não encontrado.");
 
-            usuario.Nome = usuarioAtt.Nome;
-            usuario.Email = usuarioAtt.Email;
-            usuario.Senha = usuarioAtt.Senha;
-            usuario.Tipo = usuarioAtt.Tipo;
+            _mapper.Map(dto, usuario); // aplica as mudanças do DTO no objeto existente
 
             await _context.SaveChangesAsync();
             return Ok(usuario);
         }
+
 
         [HttpDelete("excluir")]
         [Authorize]
