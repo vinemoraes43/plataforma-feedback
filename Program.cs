@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using PlataformaFbj.Data;
 using System.Text;
+using PlataformaFbj.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,6 +19,10 @@ Console.WriteLine($"JWT Key: {builder.Configuration["Jwt:Key"]}");
 // AutoMapper
 
 builder.Services.AddAutoMapper(typeof(Program));
+
+// AuthServices
+
+builder.Services.AddScoped<AuthService>();
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     .AddJwtBearer(options =>

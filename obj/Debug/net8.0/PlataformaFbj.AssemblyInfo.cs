@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PlataformaFbj")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fb47bc4945f137ba8ba8ed4d3bc6d0f65df4e891")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e918d1895d9a7158aa4de803bc54a2c54932645")]
 [assembly: System.Reflection.AssemblyProductAttribute("PlataformaFbj")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PlataformaFbj")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
