@@ -74,13 +74,28 @@ Crie um banco de dados chamado `PlataformaFbjDb` e atualize a `ConnectionString`
 3. **Instale os pacotes (caso necessário):**
 
 ```bash
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.3
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.3
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 8.0.3
+dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection --version 12.0.1
+
 dotnet restore
 ```
 
 4. **Aplique as migrações e atualize o banco:**
 
 ```bash
+dotnet tool install --global dotnet-ef ("verificar se o CLI do EF Core está instalado")
+
+dotnet ef migrations add Inicial ("Inicial pode ser o nome do motivo dessa migração como: 'CriarTabelas'")
+
 dotnet ef database update
+
+// Caso tenha que voltar a migração use:
+
+dotnet ef migrations remove
+
+dotnet ef database update NomeDaMigracaoAnterior
 ```
 
 5. **Execute o projeto:**
